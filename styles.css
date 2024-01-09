@@ -337,9 +337,13 @@ li {
 .language-selected.change-en:before {
   background-image: url(/us.png);
   margin-top: 5px;
+  margin-left: -10px;
 }
 .language-selected.change-es:before {
   background-image: url(/es.png);
+}
+.language-selected.change-it:before {
+  background-image: url(/italia.png);
 }
 
 .language ul {
@@ -387,6 +391,9 @@ a.en:before {
 }
 a.es:before {
   background-image: url(/es.png);
+}
+a.it:before {
+  background-image: url(/italia.png);
 }
 
 .language:hover ul {

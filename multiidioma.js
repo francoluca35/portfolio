@@ -8,7 +8,7 @@ function toggleLanguage() {
 function changeLanguage(language) {
 
   currentLanguage = language;
-  document.querySelector('.language-selected').classList.remove('change-en', 'change-es');
+  document.querySelector('.language-selected').classList.remove('change-en', 'change-es', 'change-it');
   document.querySelector('.language-selected').classList.add('change-' + language);
 
 
@@ -219,5 +219,111 @@ $(function() {
     });
 
 
+});
+
+//italiano
+$(function(){
+    $(".it").click(function() {
+ //encabezamiento
+ $(".nav-item").children().eq(0).text("Inizio");
+ $(".nav-item").children().eq(1).text("Chi sono");
+ $(".nav-item").children().eq(2).text("Servizi");
+ $(".nav-item").children().eq(3).text("Competenze");
+ $(".nav-item").children().eq(4).text("Realizzazioni");
+ $(".nav-item").children().eq(5).text("Portfolio");
+ $(".nav-item").children().eq(6).text("Contatti");
+ $(".language-selected").text("");
+
+ $(".language-selected").removeClass("change-en");
+ $(".language-selected").addClass("change-es");
+ //sección
+ $("#title2").text("Ciao, mi chiamo");
+ $("#tit").text("Sono");
+    //sobre
+    $("#titleS").text("Su di me");
+    $("#soy").text("Sono");
+    $("#parrafo").text("Ciao! Sono uno sviluppatore Full-Stack junior appassionato di JavaScript. Attualmente sto perfezionando le mie conoscenze in programmazione, poiché non è solo il mio lavoro, ma è la mia passione. Per questo la godo ogni secondo e sono disposto a passare tutta la vita a programmare. 🚀🌐")
+    $("#btn-d").text("Scarica il CV");
+
+      //servicios
+
+      $("#service").text("I miei servizi");
+
+      $("#desarrollo").text("Sviluppo Web")
+      $("#desarro").text("Responsabile della creazione e manutenzione di applicazioni web, siti web e altri prodotti correlati al web. Le sue responsabilità possono variare in base al focus specifico dello sviluppo web.")
+      
+      $("#reparar").text("Professionista specializzato nell'individuare, diagnosticare e risolvere problemi relativi all'hardware e al software dei computer personali.");
+      $("#reparacion").text("Riparazione del PC");
+      
+      $("#programa").text("Professionista specializzato nella creazione e nello sviluppo di software. Il suo compito principale consiste nel scrivere codice di programmazione, progettare algoritmi e sviluppare soluzioni informatiche per affrontare problemi specifici.");
+      $("#programador").text("Programmatore");
+
+       //tecnologia
+       $("#tec").text("TECNOLOGIE");
+       //logros
+       $("#car").text("CARRIERE E LAVORI");
+       //1
+       $("#front").text("Sviluppatore Front-End ");
+       $("#frontend").text("Corso intermedio di sviluppo Front-End per pagine web realizzato il 2 giugno 2022, completato il 25 ottobre 2022");
+       //2
+       $("#full").text("Sviluppatore Full-Stack");
+       $("#full2").text("Corso di programmazione Full-stack realizzato il 16 marzo 2022, completato il 06 febbraio 2023");
+       //3
+       $("#reparacion2").text("Tecnico di Assemblaggio e Riparazione PC");
+       $("#reparacion3").text("Corso di riparazione di computer, svolto nel 2019 e completato nel 2020")
+       //4
+       $("#vivintel").text("Sviluppatore Web Vivintel S.A");
+       $("#vivintel2").text(" Analisi, progettazione e sviluppo di un'applicazione per il monitoraggio e il controllo remoto dei dispositivi WEB e Android. Dal 09/2021 al 02/2023.");
+       //5
+       $("#fs").text("Sviluppatore Full-Stack");
+       $("#fs2").text("Corso su DigitalBluee in corso. Iniziato il 14 agosto");
+       //6
+       $("#mono").text(" Sviluppatore Web en Mono Naranja");
+       $("#mono2").text("Sviluppatore Web per Mono Naranja, dal 26/11/2023 - Attualmente");
+       //7
+       $("#javas").text("Sviluppatore JavaScript");
+       $("#javas2").text(" Corso di JavaScript completato con successo. Iniziato il 4 luglio e terminato il 31 agosto 2022");
+
+        //portfolio
+
+           //portfolio
+
+           $("#portf").text("IL MIO PORTAFOGLIO");
+           $("#Se").text("È stato utilizzato:");
+           $("#Se1").text("È stato utilizzato:");
+           $("#Se2").text("È stato utilizzato:");
+           $("#Se3").text("È stato utilizzato:");
+           $("#Se4").text("È stato utilizzato:");
+           $("#Se5").text("È stato utilizzato:");
+       
+            //1
+            $("#sedsp").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.");
+            //2
+            $("#jla").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.");
+            //3
+            $("#OA").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.")
+            //4
+            $("#studioar").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.");
+            $("#stud").text("Sito Web Studio di Architettura");
+            //5
+            $("#studioar").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.");
+            //6
+            $("#monoofi").text("Per realizzare questo sito web si è cercato di avere un'organizzazione e una struttura semantica molto ben definite, in modo da poter modificare il codice senza alcun tipo di inconveniente.")
+   
+
+       //contacto
+       $("#contac").text("CONTATTAMI");
+       $("#poconta").text("Mettersi in contatto");
+       $("#contactinfo").text("Il servizio dedicato allo sviluppo di pagine web per tutti i tipi di piccole e grandi imprese. Ampia varietà di formati, consultare per design e preventivi, tenendo conto dei seguenti dati e modulo.");
+       $("#name32").text("Nome Completo");
+       $("#ubi").text("Posizione");
+       $("#consulta").text("Consulta");
+       $("#men").text("Messaggio");
+       $("#send22").text("Inviare Messaggio");
+      //exito
+      $("#success-message").text("Messaggio inviato con successo");
+
+
+    })
 });
 
