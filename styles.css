@@ -309,7 +309,7 @@ li {
 .language {
   position: relative;
   width: 120px;
-  margin-right: -2250px;
+  margin-right: -2150px;
   margin-left: -400px;
   margin-top: 1px;
   font-weight: bold;
@@ -325,10 +325,11 @@ li {
   display: inline-block;
   width: 30px;
   height: 30px;
+  margin-left: -3rem;
   background-image: url(/es.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 20px;
+  margin-right: 50px;
 
 }
 
@@ -395,7 +396,9 @@ a.es:before {
       margin-right: 0;
       margin-left: 0;
   }
-
+  .language-selected:before{
+    margin-left: 1rem;
+  }
 
 }
 
@@ -438,6 +441,7 @@ a.es:before {
   background-color: var(--customColor);
   color: #fff;
   margin-top: 2rem;
+  margin-left: 14rem;
 }
 
 .hero a:hover {
