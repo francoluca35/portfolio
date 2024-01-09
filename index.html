@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css" />
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin=""></script>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('qhVzv9gky88GA3KrL')
+</script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>FranComputer</title>
+</head>
+
+<body>
+
+  <header class="header" id="home">
+
+    <nav class="nav">
+      
+      <div class="navigacion container">
+        <div class="logo" id="home">
+         <a href="#home"><h1><span>F</span>ran<span>C</span>omputer</h1></a>
+        </div>
+        <div class="language">
+          <div class="language-selected" onclick="toggleLanguage()">
+          </div>
+          <ul>
+            <li><a href="#" class="en" onclick="changeLanguage('en')"></a></li>
+            <li><a href="#" class="es" onclick="changeLanguage('es')"></a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>Fran<span>C</span>omputer</h1>
+            </div>
+
+            <div class="cerrado">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            
+            <li class="nav-item">
+              
+              <a href="#home" class="nav-link scroll-link">Inicio</a>
+              <a href="#about" class="nav-link scroll-link">Sobre Mi</a>
+              <a href="#services" class="nav-link scroll-link">Servicios</a>
+              <a href="#technologies" class="nav-link scroll-link">Habilidades</a>
+              <a href="#teams" class="nav-link scroll-link">Logros</a>
+              <a href="#blog" class="nav-link scroll-link">Portafolios</a>
+              <a href="#contact" class="nav-link scroll-link">Contactos</a>
+              
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+
+    <img class="fondo" src="home.png" alt="" />
+
+    <div class="hero" id="hero">
+      <h3 id="title2">Hola, mi nombre es </h3>
+      <h1>Franco Parera</h1>
+      <h4 class="Tituloinicio" ><span id="tit">Soy</span> <span id="type1" class="typeit"></span></h4>
+      <a href="#blog">Portafolios</a>
+    </div>
+
+    <div class="icons">
+      <span><i class="fab fa-facebook-f" href="https://api.whatsapp.com/send?phone=541131199882"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <div class="control">
+      <div class="Temafondo">
+        <i class="fas fa-cog"></i>
+      </div>
+
+      <div class="colores">
+
+        <span data-id="#DC143C"></span>
+        <span data-id="#750f1e"></span>
+        <span data-id="#09005e"></span>
+        <span data-id="#121212"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- sobre mi -->
+  <section class="section about" id="about">
+    <div class="titulo">
+      <h1 id="titleS">SOBRE MI</h1>
+    </div>
+
+    <div class="about-center container">
+      <div class="left" data-aos="fade-right" data-aos-duration="1500">
+        <img src="fondo-inicio.jpg" alt="" />
+      </div>
+      <div class="right" data-aos="fade-left" data-aos-duration="1500">
+        <h1 ><span id="soy">Soy</span> Franco Parera <span id="type2"></span></h1>
+        <p id="parrafo">
+            ¡Hola! soy Desarrollador Web, apasionado de javascript. Actualmente estoy perfeccionando
+             mis conocimientos en la programación, ya que no solo es mi trabajo, sino que es mi pasión es por ello que la disfruto cada segundo, y estoy dispuesto a pasarme toda la vida programando.  🚀🌐<br>
+        </p>
+        <a href="./CV-Parera-Franco.pdf" download="" class="btn" id="btn-d">Descargar CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section tema" id="services">
+    <div class="titulo">
+      <h1 id="service">MIS SERVICIOS</h1>
+    </div>
+
+    <div class="services-center container">
+      <div class="service" data-aos="fade-right" data-aos-duration="1500">
+        <span><i class="fab fa-accusoft"></i></span>
+        <h2 id="desarrollo">Desarrollo Web</h2>
+        <p id="desarro">
+          encargado de crear y mantener aplicaciones web, sitios web y otros productos 
+          relacionados con la web. Sus responsabilidades pueden variar según el enfoque 
+          específico del desarrollo web
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-duration="1500">
+        <span><i class="fa-sharp fa-solid fa-microchip"></i></span>
+        <h2 id="reparacion">Reparación de PC</h2>
+        <p id="reparar">
+          profesional especializado en identificar, diagnosticar y solucionar problemas 
+          relacionados con hardware y software en computadoras personales.
+        </p>
+      </div>
+      <div class="service" data-aos="fade-left" data-aos-duration="1500">
+        <span><i class="fa-solid fa-code"></i></span>
+        <h2 id="programador">Programador</h2>
+        <p id="programa">
+          profesional especializado en la creación y desarrollo de software. Su tarea principal
+           consiste en escribir código de programación, diseñar algoritmos y desarrollar soluciones 
+           informáticas para abordar problemas específicos. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- habilidades -->
+  <!-- <section class="section skills" id="skills">
+    <div class="titulo">
+      <h1>MIS HABILIDADES</h1>
+    </div>
+<div class="text">
+  <h3>Mis Habilidades creativas, y experiencias</h3>
+  <p>
+Manejo del area Front-End desenpeñandome en diseño web, mejorando todo conocimiento informatico. <br>
+buen manejo de JavaScript y sus frameworks, amplio conocimiento con HTML y CSS. <br>
+Estudiando Back-end para si lograr ser programador Full-Stack.
+  </p>
+</div></div>
+    <div class="skills-center container">
+      <div class="skills-left">
+        <div class="skills-box">
+          <h4>HTML</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar html"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>CSS</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar css"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>JAVASCRIPT</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar javascript"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>REACT</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar react"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>NEXT.js</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar next"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>GIT</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar git"></div>
+
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>NODE.js</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar node"></div>
+
+          </div>
+        </div>
+    </div>
+  </section> -->
+
+  <!--Skills-->
+  <section id="technologies">
+    <div class="capa"></div>
+    <h2 class="titleTec" id="tec">Tecnologías</h2>
+    <div class="flex flex-wrap items-center justify-center gap8">
+      <div class="flex items-center justify-center">
+        
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/1R.png" alt="React" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/2JS.png" alt="javascript" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/3Node.png" alt="Node" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/4CSS.png" alt="css" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/5T.png" alt="Tailwind" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/6html.png" alt="html" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/7git.png" alt="git" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/8gh.png" alt="github" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/9vscode.png" alt="vscode" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/10npm.png" alt="npm" width="96" height="96">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/11figma.png" alt="figma" width="96" height="96">
+      </div>
+    </div>
+  </section>
+  <!-- logros -->
+  <section class="section theme" id="teams">
+    <div class="titulo">
+      <h1 id="car">CARRERAS Y TRABAJOS</h1>
+    </div>
+
+    <div class="teams-center container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="db2.gif" alt="" />
+                </div>
+
+                <h3 id="front">Desarrollador Front-End</h3>
+                <p id="fronted">
+                    Curso intermedio de desarrollo Front-End para Paginas Web
+                  Realizado el 2 de junio de 2022, finalizado 25 de octubre de 2022
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="descargar.png" alt="" />
+                </div>
+
+                <h3 id="full">Desarrollador Full-Stack</h3>
+                <p id="full2">
+                    Curso de programacion Full-stack
+                 <br> Realizado el 16 de marzo de 2022, Terminado el 06 de febrero de 2023.
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="boston.png" alt="" />
+                </div>
+
+                <h3 id="reparacion2">Tecnico en Armado y Reparación de PC</h3>
+                <p id="reparacion3">
+                    Curso De reparación de computos
+                 <br> Realizado en el 2019 y terminado en 2020
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="logo22.png" alt="" />
+                </div>
+
+                <h3 id="vivintel">Desarrollador Web Vivintel S.A</h3>
+                <p id="vivintel2">
+                 Desde 09/2021 a 02/2023 <br>
+                 Analisis diseño y desarrollo de aplicación de monitoreo y control remoto de dispositivos WEB y Android.
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="bcc87e47eb053f5947fa6dbe45beba33a3d1dc56.png" alt="" />
+                </div>
+
+                <h3 id="javas">Desarrollador JavaScript</h3>
+                <p id="javas2">
+                    Curso de JavaScript realizado con Exito.
+                    <br>
+                    realizado el 4 de julio y terminado el 31 de agosto de 2022
+                    
+                    
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="db2.gif" alt="" />
+                </div>
+
+                <h3 id="fs">Desarrollador Web Full-Stack</h3>
+                <p id="fs2">
+                    Curso en DigitalBluee En curso.
+                    Iniciado el 14 de agosto.
+                    <br><br><br><br>
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="Logo-mono.png" alt="" />
+                </div>
+
+                <h3 id="mono">Desarrollador Web en Mono Naranja</h3>
+                <p id="mono2">
+                    Desarrollador Web para Mono Naranja, desde el dia 26/11/2023 - Actualidad <br><br><br>
+ 
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portafolios -->
+  <section class="section blog" id="blog">
+    <div class="titulo">
+      <h1 id="portf">MI PORTFOLIO</h1>
+    </div>
+
+    <div class="blog-center container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="blog-box">
+        <div class="image-container">
+          <img src="/itop.png" alt="" />
+        </div>
+        <div class="content">
+          <h4>WebSite S.E.D.S.P</h4>
+          <p id="sedsp">
+            Para realizar esta pagina web se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+            <h4 id="Se">Se utilizo:</h4>
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+            <h5>Bootstrap</h5>
+            <h5>Tailwind CSS</h5>
+
+          </p>
+          <a href="https://roaring-cannoli-f936bd.netlify.app">S.E.D.S.P WebSite</a>
+        </div>
+      </div>
+      <div class="blog-box">
+        <div class="image-container">
+          <img src="JLA Tecnico - Google Chrome 25_10_2022 00_01_56.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h4>JLA Tecnico</h4>
+          <p id="jla">
+            Para realizar este sitio de servicio tecnico web se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+            <h4 id="Se1">Se utilizo:</h4>
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+            <h5>Bootstrap</h5>
+          <a href="#">Pagina JLA (en proceso)</a>
+        </div>
+      </div>
+      <div class="blog-box">
+        <div class="image-container">
+          <img src="OA.png" alt="" />
+        </div>
+        <div class="content">
+          <h4>WebSite O.A Tarot</h4>
+          <p id="OA">
+            Para realizar este portafolios se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+            <h4 id="Se2">Se utilizo:</h4>
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+          <a href="https://francoluca35.github.io/pagina-tarot-osvaldo/">WebSite O.A Tarot</a>
+        </div>
+        </div>
+        <div class="blog-box">
+          <div class="image-container">
+            <img src="/ssarq.png" alt="" />
+          </div>
+          <div class="content">
+            <h4 id="stud">Web Estudio Arquitectura</h4>
+            <p id="studioar">
+              Para realizar esta pagina web se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+              <h4 id="Se3">Se utilizo:</h4>
+              <h5>HTML</h5>
+              <h5>CSS</h5>
+              <h5>JavaScript</h5>
+              <h5>React JS</h5>
+              <h5></h5>
+  
+            </p>
+            <a href="https://ssarquitectura.netlify.app/">S&S Arquitectura</a>
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="image-container">
+            <img src="/belen-arq.png" alt="" />
+          </div>
+          <div class="content">
+            <h4>Portfolio Arquitecta Galeano</h4>
+            <p id="gal">
+              Para realizar esta pagina web se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+              <h4 id="Se4">Se utilizo:</h4>
+              <h5>HTML</h5>
+              <h5>CSS</h5>
+              <h5>JavaScript</h5>
+              <h5>React JS</h5>
+              <h5></h5>
+  
+            </p>
+            <a href="https://belengaleanoarq.netlify.app/">Arquitecta Galeano Portfolio</a>
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="image-container">
+            <img src="/mono.png" alt="" />
+          </div>
+          <div class="content">
+            <h4>Mono Naranja Oficial</h4>
+            <p id="monoofi">
+              Para realizar esta pagina web se trato de tener un orden y semantica bastante estructurada, para si poder editar el codigo sin ningun tipo de inconvenientes.
+              <h4 id="Se5">Se utilizo:</h4>
+              <h5>HTML</h5>
+              <h5>CSS</h5>
+              <h5>JavaScript</h5>
+              <h5>React JS</h5>
+              <h5></h5>
+  
+            </p>
+            <a href="#">Mono Naranja (En proceso)</a>
+          </div>
+        </div>
+        
+        
+    </div>
+    
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="titulo">
+      <h1 id="contac">CONTACTAME</h1>
+    </div>
+
+    <div class="contact-center container">
+      <div class="left" data-aos="fade-dowm" data-aos-duration="1500">
+        <h2 id="poconta">Ponerse en contacto</h2>
+        <p id="contactinfo">
+          Servicio dedicado al desarrollo de paginas web para todo tipo de pequeñas y grandes empresas. <br>
+          Amplia variedad de formatos, para consultar por diseños y presupuestos cuenta de los siguientes datos, y formulario.
+        </p>
+        <div>
+          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span class="content">
+            <h3 id="ubi">Ubicacion</h3>
+            <span>Argentina, Buenos Aires</span>
+          </span>
+        </div>
+
+        <div>
+          <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+          <span class="content">
+            <h3>Whatsapp</h3>
+            <span><a class="wsp" href="https://api.whatsapp.com/send?phone=541131199882">+54 11-3119-9882</a></span>
+          </span>
+        </div>
+        <div>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span class="content">
+              <h3>Email</h3>
+              <span>Francolucap1@gmail.com</span>
+            </span>
+          </div>
+      </div>
+
+      <div class="right" data-aos="fade-up" data-aos-duration="1500">
+        <form id="form" class="form">
+          <h2 id="consulta">Consulta</h2>
+          <div>
+            <label for="from_name" id="name32">Nombre Completo</label>
+            <input  type="text" placeholder="Nombre" name="from_name" id="from_name" required />
+            <label for="from_email">Email</label>
+            <input  type="email" placeholder="Email" name="from_email" id="from_email" required />
+          </div>
+          <label for="message" id="men">Mensaje</label>
+          <textarea name="message" id="message" id="" cols="35" rows="10" placeholder="Your message" required>
+            </textarea>
+          <button  id="send22" type="submit" id="button" value="Send Email"  class="btn btn-form" >Enviar Mensaje</button>
+     
+        </form>
+        <div id="success-message">Mensaje enviado con éxito!</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+     
+    <img class="logo" src="logo2-nombre.png" alt="">
+    <div class="social-icon">       
+      <div class="social-item">
+
+        <a href="https://api.whatsapp.com/send?phone=541131199882"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.linkedin.com/in/franco-parera-59350320b/"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://github.com/francoluca35"><img src="https://img.icons8.com/fluency/48/000000/github.png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.instagram.com/franco.luca24/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+      </div>
+    </div>
+    <p>Created by <font color="orange">FranComputer Dev</font> | &copy; 2022 All rights reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('qhVzv9gky88GA3KrL')
+</script>
+  <!--Script -->
+  <script src="index.js"></script>
+  <script src="form.js"></script>
+  <script src="/multiidioma.js"></script>
+</body>
+
+</html>
